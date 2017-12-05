@@ -44,9 +44,9 @@ if (app.get('env') === 'production') {
  * Routes
  */
 
-app.get('/', function(req, res) {
-    res.sendFile(__dirname + '/index.ejs')
-});
+    app.get('/',function(req,res){
+        res.render('index.ejs'); 
+    });
 
 // serve index and view partials
 app.get('/', routes.index);
